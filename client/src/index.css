@@ -1,0 +1,33 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  line-height: 2.5rem;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --gradient-backgound: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgb(30, 60, 67) 50%, rgb(15, 10, 53) 80%, rgb(11, 35, 40) 100%);
+  --gold: rgb(235, 255, 121);
+}
+
+body {
+  margin: 0;
+  /* display: flex; */
+  min-width: 320px;
+  min-height: 100vh;
+  align-content: center;
+  background: var(--gradient-backgound);
+  color: var(--gold);
+  &:has(.board) {
+    @media (width <= 600px) {
+      align-content: unset;
+    }
+  }
+}
+/* reset margins */
+* {
+  margin: 0;
+}
+
+
+

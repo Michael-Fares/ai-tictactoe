@@ -32,7 +32,6 @@ def ai_move():
         return {"game_over": True, "outcome": tieMessage, "board": board}
     move = ai_model.minimax(board)
     board = ai_model.result(board, move)
-    print("board out > ", board)
     game_over = ai_model.terminal(board)
     if game_over:
         winner = ai_model.winner(board)
